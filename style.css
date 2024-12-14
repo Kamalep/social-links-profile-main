@@ -1,0 +1,93 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter", serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile {
+    margin: 40px;
+    padding: 40px;
+    background-color: hsl(0, 0%, 12%) ;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+}
+
+.name-location {
+    line-height: 10px ;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.location {
+    color: hsl(75, 94%, 57%) ;
+    font-weight: 600;
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.links {    
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    border-radius: 10px;
+    margin-top: 15px;
+    padding:20px ;
+    background-color: hsl(0, 0%, 20%) ;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.links a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%) ;
+}
+
+.attribution { 
+    width: 350px ;
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+}
+.attribution a:hover { 
+    color: hsl(75, 94%, 57%);
+}
+
+/* عرض سطح المكتب */
+@media (min-width: 500px) {
+    .profile {
+        width: 350px;
+    }
+}
+
+/* عرض الهاتف المحمول */
+@media (max-width: 499px) {
+    .profile {
+        width: 300px;
+    }
+}
